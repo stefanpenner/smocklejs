@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Smocklejs</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Smockle</title>
+  <meta name="description" content="Web developer. Web designer. Coffee aficionado. Arts patron. Avid hammocker. I build the Internet.">
+  <meta name="p:domain_verify" content="adcc5e23e134aa6d1456ff371adb7b3b"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{content-for 'head'}}
+  <link rel="dns-prefetch" href="//scontent-a.cdninstagram.com">
+  <link rel="dns-prefetch" href="//a0.smockle.com">
+  <link rel="dns-prefetch" href="//a1.smockle.com">
+  <link rel="dns-prefetch" href="//a2.smockle.com">
+  <link rel="dns-prefetch" href="//a3.smockle.com">
+  <link rel="dns-prefetch" href="//ajax.googleapis.com">
+  <link rel="dns-prefetch" href="//www.google-analytics.com">
+  <link rel="dns-prefetch" href="//beacon-2.newrelic.com">
+  <link rel="dns-prefetch" href="//js-agent.newrelic.com">
 
+  <noscript class="loadCSS">
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/smocklejs.css">
-  </head>
-  <body>
-    {{content-for 'body'}}
+  </noscript>
+  <script>
+  function loadCSS(e,t,n){"use strict";function r(e){var t=window.document.createElement("link");t.rel="stylesheet";t.href=e;return t}function i(e,t){var r=e.media||n||"all";e.media="only x";t.parentNode.insertBefore(e,t);window.setTimeout(function(){e.media=r},1)}var s=t||window.document.getElementsByClassName("loadCSS")[0],o=0;if(e){if(e instanceof Array){for(;o<e.length;o++){i(r(e[o]),s)}}else{i(r(e),s)}}else{var u=window.document.getElementsByTagName("noscript");if(u.length){var a=window.document.createElement("div");for(o=0;o<u.length;o++){if((" "+u[o].className+" ").indexOf(" loadCSS ")>-1&&(" "+u[o].className+" ").indexOf(" loaded ")===-1){a.innerHTML+=" "+u[o].innerText;u[o].className+=" loaded "}}var f=a.getElementsByTagName("link");for(o=0;o<f.length;o++){var l=f[o].cloneNode(true);i(l,s)}}}}
+  loadCSS();
+  </script>
 
-    <script src="assets/vendor.js"></script>
-    <script src="assets/smocklejs.js"></script>
-  </body>
+  {{content-for 'head'}}
+
+  <link href="http://a0.smockle.com/assets/apple-touch-icon-152x152-precomposed-de0a4e543d4874e923ab5a744aaeec37.png" rel="apple-touch-icon-precomposed" sizes="152x152" type="image/png">
+  <link href="http://a0.smockle.com/assets/apple-touch-icon-120x120-precomposed-4cdc97c064265fd60de0b7dc91791ea7.png" rel="apple-touch-icon-precomposed" sizes="120x120" type="image/png">
+  <link href="http://a0.smockle.com/assets/apple-touch-icon-76x76-precomposed-f6ab9a90e7e4586bb32b7e92a294a351.png" rel="apple-touch-icon-precomposed" sizes="76x76" type="image/png">
+  <link href="http://a1.smockle.com/assets/apple-touch-icon-precomposed-af2cdf87d72d554b60e8455ca08f9e30.png" rel="apple-touch-icon-precomposed" type="image/png">
+  <link href="http://a0.smockle.com/assets/favicon-b721c4e85233a67581fced5ae54160e6.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+</head>
+<body>
+
+  {{content-for 'body'}}
+
+  <script>(function(G,o,O,g,l){G.GoogleAnalyticsObject=O;G[O]||(G[O]=function(){(G[O].q=G[O].q||[]).push(arguments)});G[O].l=+new Date;g=o.createElement('script'),l=o.scripts[0];g.src='//www.google-analytics.com/analytics.js';l.parentNode.insertBefore(g,l)}(this,document,'ga'));ga('create','UA-37140610-3');ga('send','pageview')</script>
+
+  <script src="assets/vendor.js"></script>
+  <script src="assets/smocklejs.js"></script>
+</body>
 </html>
